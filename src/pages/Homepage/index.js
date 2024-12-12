@@ -4,10 +4,10 @@ import styles from './Homepage.module.scss';
 
 const cx = classnames.bind(styles);
 
-function Homepage() {
+function HomePage() {
     return ( 
-        <div className={cx('attribute')}></div>
+        <div className={cx('attribute')}>Homepage</div>
      );
 }
 
-export default Homepage;
+export default HomePage;    
