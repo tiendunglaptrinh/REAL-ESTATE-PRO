@@ -10,7 +10,7 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }) => (
       disabled={currentPage === 1}
       aria-label="Previous page"
     >
-     
+      &lt;
     </button>
 
     {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
@@ -31,7 +31,7 @@ export const Pagination = ({ currentPage, totalPages, onPageChange }) => (
       disabled={currentPage === totalPages}
       aria-label="Next page"
     >
-      
+      &gt;
     </button>
   </nav>
 );
