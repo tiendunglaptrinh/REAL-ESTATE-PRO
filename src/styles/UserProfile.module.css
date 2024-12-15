@@ -1,0 +1,161 @@
+.profileContainer {
+    border-radius: 16px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    letter-spacing: -0.33px;
+    padding-bottom: 233px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .profileContainer {
+      padding-bottom: 100px;
+    }
+  }
+  
+  @media (forced-colors: active) {
+    .profileContainer {
+      border: 1px solid CanvasText;
+    }
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 35px 45px;
+    align-items: center;
+    border-bottom: 1px solid #f0f3f4;
+  }
+  
+  .userInfo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .userDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .userName {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    color: #0b2c3d;
+  }
+  
+  .userEmail {
+    font-size: 15px;
+    opacity: 0.5;
+  }
+  
+  .editButton {
+    padding: 14px 28px;
+    border-radius: 5px;
+    background-color: #b2935d;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .editButton:hover {
+    background-color: #9a7d4d;
+  }
+  
+  .editButton:focus-visible {
+    outline: 3px solid #0b2c3d;
+    outline-offset: 2px;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      padding: 20px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+  @media (forced-colors: active) {
+    .editButton {
+      border: 1px solid ButtonText;
+    }
+  }
+
+  .formField {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: 420px;
+  }
+  
+  .fieldLabel {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 9px;
+  }
+  
+  .fieldValue {
+    border-radius: 8px;
+    background-color: #f0f3f4;
+    padding: 24px 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    min-height: 24px;
+  }
+  
+  @media (max-width: 991px) {
+    .formField {
+      width: 100%;
+    }
+    
+    .fieldValue {
+      padding: 16px 12px;
+    }
+  }
+  
+  @media (forced-colors: active) {
+    .fieldValue {
+      border: 1px solid CanvasText;
+    }
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 940px;
+    width: 100%;
+    margin: 33px auto;
+    padding: 0 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .detailsContainer {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (prefers-reduced-motion: reduce) {
+    .detailsContainer * {
+      transition: none !important;
+    }
+  }
