@@ -88,7 +88,7 @@ const MOCK_POSTS = [
 
 const MOCK_USER = {
   userName: "Nguyễn minh thanh thanh",
-  userImage: "https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/469934702_122134093892443481_7639461512469391391_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7VX7sxulf_kQ7kNvgEELAhD&_nc_zt=23&_nc_ht=scontent.fsgn19-1.fna&_nc_gid=A17tsaYm5nXCGKKhwkZSA0_&oh=00_AYAchhOdNGSDFets5W_1Ui2HT4AJJc7MWXQqC-Qz-eZs5Q&oe=6760CEDF",
+  userImage: "https://file4.batdongsan.com.vn/2024/12/12/20241212113400-7177_wm.jpg",
   balance: "280.000",
   postCount: "44",
   likes: "300",

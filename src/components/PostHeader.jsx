@@ -13,7 +13,7 @@ const FILTERS = [
 
 export const PostHeader = ({ activeFilter, onFilterChange }) => (
   <header className={styles.postHeader}>
-    <h1 className={styles.postTitle}>Danh sách tin đăng</h1>
+    <h1 className={styles.postTitle1}>Danh sách tin đăng</h1>
     <div className={styles.filterTabs} role="tablist">
       {FILTERS.map(filter => (
         <button
