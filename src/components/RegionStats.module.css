@@ -1,0 +1,80 @@
+.region-stats {
+    background-color: rgb(249, 249, 250);
+    border-radius: 16px;
+    padding: 24px;
+    min-width: 400px;
+    min-height: 280px;
+  }
+  
+  .title {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    margin: 0 0 16px 0;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+    height: calc(100% - 40px);
+  }
+  
+  .map {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .stat-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .region {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .name {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .percentage {
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .region-stats {
+      padding: 20px;
+    }
+    
+    .content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }

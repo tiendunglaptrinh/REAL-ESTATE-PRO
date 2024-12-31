@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { HomePage } from './pages/page.js'
+import { HomePage, Dashboard, NewsManagement, ViolationReport} from './pages/page.js'
 import reportWebVitals from './reportWebVitals';
+import Admin from './layouts/Admin.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <Admin/>
   </React.StrictMode>
 );
 
