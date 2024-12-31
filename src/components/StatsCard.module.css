@@ -1,0 +1,66 @@
+.card {
+    border-radius: 16px;
+    background-color: rgb(237, 238, 252);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    flex: 1;
+  }
+  
+  .title {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .value {
+    color: #1c1c1c;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter, -apple-system, sans-serif;
+  }
+  
+  .trend-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .percentage {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .trend-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 991px) {
+    .card {
+      padding: 20px;
+    }
+  }

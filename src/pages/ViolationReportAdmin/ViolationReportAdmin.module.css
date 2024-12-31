@@ -1,0 +1,87 @@
+:root {
+    --color-grey-31: #505050;
+    --color-primary: #b2935d;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-border: #c8c9c7;
+    --color-gray-5: #e5e5ea;
+    --font-family: Roboto, sans-serif;
+  }
+  .violationReport {
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden;
+    font-family: var(--font-family); */
+  }
+  .container {
+    background-color: rgba(11, 44, 61, 0.1);
+    align-self: start;
+    display: flex;
+    min-width: auto;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .title {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding: 24px 60px;
+    color: #000;
+    letter-spacing: -0.33px;
+    font: 600 25px/1 Roboto, sans-serif;
+    margin: 0px;
+  }
+  .reportList {
+    width: 90%;
+  }
+  .reportTable {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        background-color: var(--color-white);
+        border-radius: 12px;
+    }
+
+    .reportTable th{
+        border: none;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .reportTable td {
+        padding: 10px 15px;
+        font-size: 15px;
+        /* border: none; */
+        border-top: 1px solid var(--color-border); 
+        /* border-bottom: 1px solid var(--color-border); */
+        /* border-left: none;  */
+        /* border-right: none;  */
+    }
+
+    .reportTable thead {
+        background-color: var(--color-light-gray);
+        font-weight: bold;
+    }
+
+    .reportTable tr:nth-child(even) {
+        background-color: var(--color-lightest-gray);
+    }
+    .detailButton {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.2s ease-in-out;
+    }
+    
+    .detailButton:hover {
+        background-color:antiquewhite;
+        color: var(--color-primary);
+    }

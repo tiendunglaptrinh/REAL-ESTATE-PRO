@@ -1,0 +1,228 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+.newsManagement {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .container {
+    background-color: rgba(11, 44, 61, 0.1);
+    align-self: start;
+    display: flex;
+    min-width: auto;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .pageTitle {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding: 24px 60px;
+    color: #000;
+    letter-spacing: -0.33px;
+    font: 600 25px/1 Roboto, sans-serif;
+    margin: 0px;
+  }
+  
+  
+  
+  .imageWrapper {
+    border-radius: 7px;
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    overflow: hidden;
+    width: 250px;
+    margin: auto 0;
+  }
+  
+  .newsImage {
+    aspect-ratio: 1.39;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .contentWrapper {
+    border-right: 1px solid rgba(178, 147, 93, 0.2);
+    display: flex;
+    min-width: 240px;
+    padding-left: 15px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    letter-spacing: -0.33px;
+    justify-content: start;
+    width: 796px;
+  }
+  
+  .newsContent {
+    display: flex;
+    width: 100%;
+    max-width: 764px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 0 1px;
+  }
+  
+  .newsTitle {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--batdongsan-com-vn-mine-shaft, #2c2c2c);
+  }
+  
+  .newsDescription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--batdongsan-com-vn-mine-shaft, #2c2c2c);
+  }
+  
+  .metaInfo {
+    border-top: 1px solid rgba(74, 98, 124, 0.2);
+    display: flex;
+    margin-top: 6px;
+    min-height: 54px;
+    align-items: start;
+    gap: 40px;
+    justify-content: center;
+    padding: 5px 0;
+  }
+  
+  .metaItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .metaLabel {
+    font-size: 14px;
+    color: var(--batdongsan-com-vn-dusty-gray, #999);
+    font-weight: 400;
+  }
+  
+  .metaValue {
+    font-size: 15px;
+    color: var(--batdongsan-com-vn-mine-shaft, #2c2c2c);
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .actionButtons {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    color: var(--Primary-1, #0b2c3d);
+    justify-content: center;
+    flex: 1;
+    flex-basis: 15px;
+    font: 500 13px/2 Roboto, sans-serif;
+  }
+  
+  .editButton, .hideButton {
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid var(--Primary-1, #0b2c3d);
+    display: flex;
+    width: 90px;
+    gap: 5px;
+    padding: 5px 10px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .hideButton {
+    margin-top: 20px;
+  }
+  
+  .buttonIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+  }
+  
+  .pagination {
+    display: flex;
+    margin-top: 33px;
+    width: 606px;
+    max-width: 100%;
+    gap: 18px;
+    color: var(--Neutral-2, #494a53);
+    font: 500 30px Roboto, sans-serif;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .paginationButton {
+    border-radius: 15px;
+    background: var(--Neutral-8, #f0f3f4);
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .paginationButton.active {
+    background: var(--Secondary-2, #355c7d);
+    color: var(--Neutral-9, #fff);
+  }
+  
+  .paginationArrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .paginationIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 60px;
+  }
+  
+  @media (max-width: 991px) {
+    .container {
+      max-width: 100%;
+    }
+    
+    .pageTitle {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    
+    .contentWrapper {
+      max-width: 100%;
+    }
+    
+    .newsContent {
+      max-width: 100%;
+    }
+    
+    .newsTitle {
+      max-width: 100%;
+    }
+    
+    .newsDescription {
+      max-width: 100%;
+    }
+    
+    .metaValue {
+      white-space: initial;
+    }
+  }
