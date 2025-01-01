@@ -1,5 +1,5 @@
 .userList {
-    justify-content: center;
+    justify-content: justify-start;
     border-radius: 8px;
     background: var(--Neutral-6, #bbbed0);
     display: flex;
@@ -12,6 +12,9 @@
     letter-spacing: -0.33px;
     /* width: 440px; */
     padding: 30px;
+    overflow-y: hidden; 
+    max-height: 800px;
+
   }
   
   .title {

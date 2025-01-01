@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classnames from 'classnames/bind';
 import ReportItem from '../../components/ReportItemsAdmin';
 import FilterSection from '../../components/FillterSelection';
@@ -7,13 +7,28 @@ import baseStyles from './ViolationReportAdmin.module.css';
 import Pagination from '../../components/Pagination';
 
 const cx = classnames.bind(baseStyles);
+
 const handleDetailClick = (reportId) => {
     console.log('Xem chi tiết cho báo cáo:', reportId);
     // Thực hiện các hành động khác, như điều hướng hoặc mở modal
 };
 
 function ViolationReport({ reports }) {
+  const [currentPage, setCurrentPage] = useState(1); 
+  const itemsPerPage = 7; // Số báo cáo hiển thị mỗi trang
+
   if (!reports) return null;
+
+  const totalPages = Math.ceil(reports.length / itemsPerPage);
+
+  const currentReports = reports.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   return (
     <div className={cx('violationReport')}> 
@@ -34,9 +49,9 @@ function ViolationReport({ reports }) {
               </tr>
             </thead>
             <tbody>
-              {reports.map((report, index) => (
+              {currentReports.map((report, index) => (
                 <tr key={report.reportId}>
-                  <td>{index + 1}</td>
+                  <td>{(currentPage - 1) * itemsPerPage + index + 1}</td>
                   <td>{report.reportId}</td>
                   <td>{report.postId}</td>
                   <td>{report.title}</td>
@@ -55,7 +70,12 @@ function ViolationReport({ reports }) {
             </tbody>
           </table>
         </section>
-        <Pagination currentPage={1} totalPages={7} />
+        {/* Tích hợp phân trang */}
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange} // Callback khi trang thay đổi
+        />
       </main>
     </div>
   );
