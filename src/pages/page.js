@@ -1,7 +1,5 @@
-import HomePage from './Homepage'
-// import Profile from './Profile'
+import HomePage from "./Homepage";
+import Post from "./Posts";
+import NewPost from "./NewPost";
 
-
-export {
-    HomePage
-}
+export { HomePage, Post, NewPost };
