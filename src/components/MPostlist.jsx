@@ -6,15 +6,16 @@ import Pagination from './Pagination';
 
 const cx = classnames.bind(styles);
 
-function PostList({ posts, activeFilter, onFilterChange }) {
+function PostList({ posts, activeFilter, onFilterChange, currentPage, totalPages, onPageChange }) {
   const filters = ['Tất cả', 'Đang hiện thị', 'Hết hạn', 'Đăng không thành công', 'Tin bị ẩn'];
-  
+
   return (
     <div className={cx('postList')}>
+      {/* Tiêu đề và bộ lọc */}
       <div className={cx('header')}>
         <div className={cx('title')}>Danh sách tin đăng</div>
         <div className={cx('filterTabs')}>
-          {filters.map(filter => (
+          {filters.map((filter) => (
             <div
               key={filter}
               className={cx({ activeTab: filter === activeFilter })}
@@ -33,11 +34,17 @@ function PostList({ posts, activeFilter, onFilterChange }) {
         </div>
       </div>
 
-      {posts.map(post => (
+      {/* Danh sách bài đăng */}
+      {posts.map((post) => (
         <PostCard key={post.id} post={post} />
       ))}
 
-        <Pagination currentPage={1} totalPages={7}/>
+      {/* Phân trang */}
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={onPageChange}
+      />
     </div>
   );
 }

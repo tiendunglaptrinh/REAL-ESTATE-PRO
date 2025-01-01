@@ -63,46 +63,12 @@
             "phone": "0944 567 890",
             "email": "bachdo92@gmail.com",
             "avatar": "https://images.pexels.com/photos/29803464/pexels-photo-29803464.jpeg"
-          },
-          {
-            "id": 6,
-            "name": "Vũ Thị Lan",
-            "phone": "0955 234 567",
-            "email": "lanvu85@gmail.com",
-            "avatar": "https://images.pexels.com/photos/29803465/pexels-photo-29803465.jpeg"
-          },
-          {
-            "id": 7,
-            "name": "Hoàng Văn Nam",
-            "phone": "0966 890 123",
-            "email": "namhoang91@gmail.com",
-            "avatar": "https://images.pexels.com/photos/29803466/pexels-photo-29803466.jpeg"
-          },
-          {
-            "id": 8,
-            "name": "Ngô Thị Thảo",
-            "phone": "0922 345 678",
-            "email": "thaongo87@gmail.com",
-            "avatar": "https://images.pexels.com/photos/29803467/pexels-photo-29803467.jpeg"
-          },
-          {
-            "id": 9,
-            "name": "Bùi Văn Đức",
-            "phone": "0988 901 234",
-            "email": "ducbui93@gmail.com",
-            "avatar": "https://images.pexels.com/photos/29803468/pexels-photo-29803468.jpeg"
-          },
-          {
-            "id": 10,
-            "name": "Trương Thị Hà",
-            "phone": "0999 567 890",
-            "email": "hatruong90@gmail.com",
-            "avatar": "https://images.pexels.com/photos/29803469/pexels-photo-29803469.jpeg"
           }
         ],
         "posts": [
           {
             "id": "41461881",
+            "userId": 1,
             "title": "Nhà 2 tầng kiệt Lý Thái Tổ - TTTP Đà Nẵng giá chỉ 3,6 tỷ có TL",
             "address": "Đường Lý Thái Tổ, Phường Thạc Gián, Thanh Khê, Đà Nẵng",
             "status": "active",
@@ -112,6 +78,7 @@
           },
           {
             "id": "41461882",
+            "userId": 2,
             "title": "Căn hộ cao cấp view biển Mỹ Khê - 2PN full nội thất",
             "address": "Đường Võ Nguyên Giáp, Phường Phước Mỹ, Sơn Trà, Đà Nẵng",
             "status": "failed",
@@ -121,6 +88,7 @@
           },
           {
             "id": "41461883",
+            "userId": 3,
             "title": "Bán đất nền khu đô thị FPT - DT 125m2 giá đầu tư",
             "address": "Đường Nam Kỳ Khởi Nghĩa, Ngũ Hành Sơn, Đà Nẵng",
             "status": "active",
@@ -130,6 +98,7 @@
           },
           {
             "id": "41461884",
+            "userId": 4,
             "title": "Shophouse mặt tiền Nguyễn Văn Linh - Vị trí đắc địa",
             "address": "Đường Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
             "status": "expired",
@@ -139,57 +108,13 @@
           },
           {
             "id": "41461885",
+            "userId": 5,
             "title": "Biệt thự nghỉ dưỡng Bà Nà Hills - 500m2 đất ở",
             "address": "Hoà Ninh, Hoà Vang, Đà Nẵng",
             "status": "active",
             "statusText": "Đang hiện thị",
             "postDate": "11/11/2024",
             "expiryDate": "26/11/2024"
-          },
-          {
-            "id": "41461886",
-            "title": "Căn hộ Monarchy 3PN - View sông Hàn cực đẹp",
-            "address": "Đường Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng",
-            "status": "active",
-            "statusText": "Đang hiện thị",
-            "postDate": "12/11/2024",
-            "expiryDate": "27/11/2024"
-          },
-          {
-            "id": "41461887",
-            "title": "Nhà phố 3 tầng KĐT Việt Hàn - Hoàn thiện cao cấp",
-            "address": "Hoà Quý, Ngũ Hành Sơn, Đà Nẵng",
-            "status": "failed",
-            "statusText": "Đăng không thành công",
-            "postDate": "13/11/2024",
-            "expiryDate": "28/11/2024"
-          },
-          {
-            "id": "41461888",
-            "title": "Đất nền ven biển Nam Đà Nẵng - Cạnh Cocobay",
-            "address": "Điện Ngọc, Điện Bàn, Quảng Nam",
-            "status": "active",
-            "statusText": "Đang hiện thị",
-            "postDate": "14/11/2024",
-            "expiryDate": "29/11/2024"
-          },
-          {
-            "id": "41461889",
-            "title": "Nhà mặt tiền Điện Biên Phủ - Kinh doanh sầm uất",
-            "address": "Đường Điện Biên Phủ, Thanh Khê, Đà Nẵng",
-            "status": "expired",
-            "statusText": "Hết hạn",
-            "postDate": "15/11/2024",
-            "expiryDate": "30/11/2024"
-          },
-          {
-            "id": "41461890",
-            "title": "Căn hộ The Sang Residence - 2PN view biển",
-            "address": "Đường Võ Văn Kiệt, An Hải Đông, Sơn Trà, Đà Nẵng",
-            "status": "active",
-            "statusText": "Đang hiện thị",
-            "postDate": "16/11/2024",
-            "expiryDate": "01/12/2024"
           }
         ]
       },
