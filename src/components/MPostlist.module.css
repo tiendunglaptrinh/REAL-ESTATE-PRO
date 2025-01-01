@@ -1,0 +1,82 @@
+.postList {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--Neutral-6, #bbbed0);
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    padding: 30px;
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    flex-direction: column;
+    color: #000;
+    letter-spacing: -0.33px;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .filterTabs {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  .activeTab {
+    color: var(--Primary-1, #0b2c3d);
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-thickness: auto;
+    text-underline-offset: 25%;
+  }
+  
+
+  .pageNumber {
+    border-radius: 15px;
+    background: var(--Neutral-8, #f0f3f4);
+    width: 60px;
+    height: 60px;
+    padding: 0 21px;
+  }
+  
+  .pageNumber.active {
+    background: var(--Secondary-2, #355c7d);
+    color: var(--Neutral-9, #fff);
+  }
+  
+  @media (max-width: 991px) {
+    .postList {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    
+    .title {
+      max-width: 100%;
+    }
+    
+    .filterTabs {
+      max-width: 100%;
+    }
+    
+    .pagination {
+      white-space: initial;
+    }
+    
+    .pageNumber {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }

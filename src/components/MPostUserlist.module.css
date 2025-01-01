@@ -1,0 +1,53 @@
+.userList {
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--Neutral-6, #bbbed0);
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: -0.33px;
+    /* width: 440px; */
+    padding: 30px;
+  }
+  
+  .title {
+    width: 100%;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  .searchContainer {
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 20px;
+    color: var(--Neutral-4, #8c8c8c);
+    line-height: 1;
+    padding: 5px;
+  }
+  
+  .searchIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 30px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .searchText {
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .userList {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }

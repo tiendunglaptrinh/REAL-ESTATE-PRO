@@ -1,0 +1,144 @@
+.postCard {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .mainContent {
+    border-right: 1px solid rgba(178, 147, 93, 0.2);
+    display: flex;
+    min-width: 240px;
+    padding-left: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1px;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .statusBadge {
+    align-self: stretch;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    margin: auto 0;
+    padding: 5px 16px;
+    min-width: 80px;
+    max-width: 82px;
+    text-align: center;
+  }
+  
+  .statusBadge.active {
+    background: var(--Primary-1, #0b2c3d);
+  }
+  
+  .statusBadge.hidden {
+    background: var(--Secondary-2, #355c7d);
+  }
+  
+  .statusBadge.expired {
+    background: var(--Primary-2, #b2935d);
+  }
+  
+  .statusBadge.failed {
+    background: var(--Secondary-5, #c20000);
+  }
+  
+  .title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .address {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  
+  .details {
+    border-top: 1px solid rgba(74, 98, 124, 0.2);
+    display: flex;
+    margin-top: 8px;
+    min-height: 54px;
+    align-items: start;
+    gap: 40px;
+    letter-spacing: -0.33px;
+    padding: 5px 0;
+  }
+  
+  .detailItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detailLabel {
+    font-size: 14px;
+    color: var(--batdongsan-com-vn-dusty-gray, #999);
+    font-weight: 400;
+    padding-bottom: 6px;
+  }
+  
+  .detailValue {
+    font-size: 15px;
+    color: var(--batdongsan-com-vn-mine-shaft, #2c2c2c);
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .actions {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    font-size: 13px;
+    color: var(--Primary-1, #0b2c3d);
+    font-weight: 500;
+    line-height: 2;
+    justify-content: center;
+    width: 90px;
+  }
+  
+  .actionButton {
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid var(--Primary-1, #0b2c3d);
+    display: flex;
+    width: 90px;
+    gap: 5px;
+    padding: 5px 9px;
+    align-items: center;
+  }
+  
+  .actionButton:not(:first-child) {
+    margin-top: 20px;
+  }
+  
+  .actionIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    width: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      max-width: 100%;
+    }
+    
+    .detailValue {
+      white-space: initial;
+    }
+  }

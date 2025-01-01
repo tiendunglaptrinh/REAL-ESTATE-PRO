@@ -60,7 +60,7 @@ function NewsManagement() {
           ))}
         </div>
         
-        <Pagination currentPage={3} totalPages={7} />
+        <Pagination currentPage={1} totalPages={7} />
       </div>
     </main>
   );
