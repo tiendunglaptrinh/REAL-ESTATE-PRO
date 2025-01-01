@@ -1,0 +1,2 @@
+file admin.jsx với data.json là để load data trong đó ra test rồi
+còn gọi api thì dùng admin1.jsx với apiservice.js (chưa test)
