@@ -1,0 +1,308 @@
+{
+    "dashboard": {
+      "statsData": [
+        {
+          "title": "Tổng số bài đăng",
+          "value": "1,334",
+          "percentage": "+11.01%",
+          "trend": "up"
+        },
+        {
+          "title": "Lượt truy cập",
+          "value": "5,678",
+          "percentage": "-0.03%",
+          "trend": "down"
+        },
+        {
+          "title": "Số lượt đăng ký mới",
+          "value": "890",
+          "percentage": "+15.03%",
+          "trend": "up"
+        },
+        {
+          "title": "Tổng số tài khoản user",
+          "value": "2,345",
+          "percentage": "+6.08%",
+          "trend": "up"
+        }
+      ]
+    },
+    "postManagement": {
+        "users": [
+          {
+            "id": 1,
+            "name": "Nguyễn Minh Thanh",
+            "phone": "0968 523 681",
+            "email": "nguyenminh0326@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803460/pexels-photo-29803460/free-photo-of-charming-slovak-church-amidst-scenic-mountains.jpeg"
+          },
+          {
+            "id": 2,
+            "name": "Trần Thị Hương",
+            "phone": "0912 345 678",
+            "email": "huongtran89@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803461/pexels-photo-29803461.jpeg"
+          },
+          {
+            "id": 3,
+            "name": "Lê Văn Hoàng",
+            "phone": "0977 123 456",
+            "email": "hoangle95@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803462/pexels-photo-29803462.jpeg"
+          },
+          {
+            "id": 4,
+            "name": "Phạm Thị Mai",
+            "phone": "0933 789 012",
+            "email": "maipham88@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803463/pexels-photo-29803463.jpeg"
+          },
+          {
+            "id": 5,
+            "name": "Đỗ Xuân Bách",
+            "phone": "0944 567 890",
+            "email": "bachdo92@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803464/pexels-photo-29803464.jpeg"
+          },
+          {
+            "id": 6,
+            "name": "Vũ Thị Lan",
+            "phone": "0955 234 567",
+            "email": "lanvu85@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803465/pexels-photo-29803465.jpeg"
+          },
+          {
+            "id": 7,
+            "name": "Hoàng Văn Nam",
+            "phone": "0966 890 123",
+            "email": "namhoang91@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803466/pexels-photo-29803466.jpeg"
+          },
+          {
+            "id": 8,
+            "name": "Ngô Thị Thảo",
+            "phone": "0922 345 678",
+            "email": "thaongo87@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803467/pexels-photo-29803467.jpeg"
+          },
+          {
+            "id": 9,
+            "name": "Bùi Văn Đức",
+            "phone": "0988 901 234",
+            "email": "ducbui93@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803468/pexels-photo-29803468.jpeg"
+          },
+          {
+            "id": 10,
+            "name": "Trương Thị Hà",
+            "phone": "0999 567 890",
+            "email": "hatruong90@gmail.com",
+            "avatar": "https://images.pexels.com/photos/29803469/pexels-photo-29803469.jpeg"
+          }
+        ],
+        "posts": [
+          {
+            "id": "41461881",
+            "title": "Nhà 2 tầng kiệt Lý Thái Tổ - TTTP Đà Nẵng giá chỉ 3,6 tỷ có TL",
+            "address": "Đường Lý Thái Tổ, Phường Thạc Gián, Thanh Khê, Đà Nẵng",
+            "status": "active",
+            "statusText": "Đang hiện thị",
+            "postDate": "07/11/2024",
+            "expiryDate": "22/11/2024"
+          },
+          {
+            "id": "41461882",
+            "title": "Căn hộ cao cấp view biển Mỹ Khê - 2PN full nội thất",
+            "address": "Đường Võ Nguyên Giáp, Phường Phước Mỹ, Sơn Trà, Đà Nẵng",
+            "status": "failed",
+            "statusText": "Đăng không thành công",
+            "postDate": "08/11/2024",
+            "expiryDate": "23/11/2024"
+          },
+          {
+            "id": "41461883",
+            "title": "Bán đất nền khu đô thị FPT - DT 125m2 giá đầu tư",
+            "address": "Đường Nam Kỳ Khởi Nghĩa, Ngũ Hành Sơn, Đà Nẵng",
+            "status": "active",
+            "statusText": "Đang hiện thị",
+            "postDate": "09/11/2024",
+            "expiryDate": "24/11/2024"
+          },
+          {
+            "id": "41461884",
+            "title": "Shophouse mặt tiền Nguyễn Văn Linh - Vị trí đắc địa",
+            "address": "Đường Nguyễn Văn Linh, Hải Châu, Đà Nẵng",
+            "status": "expired",
+            "statusText": "Hết hạn",
+            "postDate": "10/11/2024",
+            "expiryDate": "25/11/2024"
+          },
+          {
+            "id": "41461885",
+            "title": "Biệt thự nghỉ dưỡng Bà Nà Hills - 500m2 đất ở",
+            "address": "Hoà Ninh, Hoà Vang, Đà Nẵng",
+            "status": "active",
+            "statusText": "Đang hiện thị",
+            "postDate": "11/11/2024",
+            "expiryDate": "26/11/2024"
+          },
+          {
+            "id": "41461886",
+            "title": "Căn hộ Monarchy 3PN - View sông Hàn cực đẹp",
+            "address": "Đường Trần Hưng Đạo, An Hải Tây, Sơn Trà, Đà Nẵng",
+            "status": "active",
+            "statusText": "Đang hiện thị",
+            "postDate": "12/11/2024",
+            "expiryDate": "27/11/2024"
+          },
+          {
+            "id": "41461887",
+            "title": "Nhà phố 3 tầng KĐT Việt Hàn - Hoàn thiện cao cấp",
+            "address": "Hoà Quý, Ngũ Hành Sơn, Đà Nẵng",
+            "status": "failed",
+            "statusText": "Đăng không thành công",
+            "postDate": "13/11/2024",
+            "expiryDate": "28/11/2024"
+          },
+          {
+            "id": "41461888",
+            "title": "Đất nền ven biển Nam Đà Nẵng - Cạnh Cocobay",
+            "address": "Điện Ngọc, Điện Bàn, Quảng Nam",
+            "status": "active",
+            "statusText": "Đang hiện thị",
+            "postDate": "14/11/2024",
+            "expiryDate": "29/11/2024"
+          },
+          {
+            "id": "41461889",
+            "title": "Nhà mặt tiền Điện Biên Phủ - Kinh doanh sầm uất",
+            "address": "Đường Điện Biên Phủ, Thanh Khê, Đà Nẵng",
+            "status": "expired",
+            "statusText": "Hết hạn",
+            "postDate": "15/11/2024",
+            "expiryDate": "30/11/2024"
+          },
+          {
+            "id": "41461890",
+            "title": "Căn hộ The Sang Residence - 2PN view biển",
+            "address": "Đường Võ Văn Kiệt, An Hải Đông, Sơn Trà, Đà Nẵng",
+            "status": "active",
+            "statusText": "Đang hiện thị",
+            "postDate": "16/11/2024",
+            "expiryDate": "01/12/2024"
+          }
+        ]
+      },
+      "newsManagement": {
+        "news": [
+          {
+            "id": "41461881",
+            "image": "https://images.pexels.com/photos/29803460/pexels-photo-29803460/free-photo-of-charming-slovak-church-amidst-scenic-mountains.jpeg",
+            "title": "Giải Pháp Tài Chính Đột Phá, Mua Nhà Sài Gòn Chỉ Từ 450 Triệu Đồng",
+            "description": "Theo báo cáo quý 3/2024 của Bộ Xây dựng, giá bất động sản tại một số địa phương, đặc biệt là Hà Nội, TP.HCM và các đô thị lớn tiếp tục có xu hướng tăng, bất chấp nguồn cung có dấu hiệu cải thiện.",
+            "publishDate": "07/11/2024",
+            "lastUpdate": "22/11/2024"
+          },
+          {
+            "id": "41461882",
+            "image": "https://images.pexels.com/photos/29803460/pexels-photo-29803460/free-photo-of-charming-slovak-church-amidst-scenic-mountains.jpeg",
+            "title": "Căn Hộ Chung Cư Các Thị Trường Vệ Tinh Phía Nam",
+            "description": "Căn hộ chung cư các thị trường vệ tinh, vùng ven TP.HCM đang trở thành tâm điểm đầu tư cuối năm 2024.",
+            "publishDate": "07/11/2024",
+            "lastUpdate": "22/11/2024"
+          },
+          {
+            "id": "41461883",
+            "image": "https://images.pexels.com/photos/architecture.jpg",
+            "title": "Thị Trường Bất Động Sản Đà Nẵng Khởi Sắc Đầu Năm 2025",
+            "description": "Thị trường BĐS Đà Nẵng ghi nhận nhiều tín hiệu tích cực trong quý 1/2025 với lượng giao dịch tăng 25% so với cùng kỳ năm trước.",
+            "publishDate": "02/01/2025",
+            "lastUpdate": "02/01/2025"
+          },
+          {
+            "id": "41461884",
+            "image": "https://images.pexels.com/photos/modern-building.jpg",
+            "title": "Xu Hướng Đầu Tư BĐS Nghỉ Dưỡng Năm 2025",
+            "description": "Các chuyên gia dự báo thị trường bất động sản nghỉ dưỡng sẽ có nhiều khởi sắc trong năm 2025 nhờ dòng khách quốc tế trở lại.",
+            "publishDate": "01/01/2025",
+            "lastUpdate": "01/01/2025"
+          },
+          {
+            "id": "41461885",
+            "image": "https://images.pexels.com/photos/cityscape.jpg",
+            "title": "Làn Sóng Đầu Tư Mới Vào Bất Động Sản Công Nghiệp",
+            "description": "Các khu công nghiệp tại các tỉnh phía Bắc đón nhận làn sóng đầu tư mới từ các tập đoàn đa quốc gia.",
+            "publishDate": "30/12/2024",
+            "lastUpdate": "30/12/2024"
+          }
+        ]
+      },
+      "violationReport": {
+        "reports": [
+          {
+            "number": "169",
+            "reportId": "13244",
+            "postId": "1542152354",
+            "title": "Bán căn nhà mẫu 54m2 tổng diện tích sử dụng 200m2, thiết kế 3PN đẹp, có thang máy và nội thất",
+            "reason": "Tin sai nội dung, Tin có dấu hiệu lừa đảo",
+            "date": "12/12/2024"
+          },
+          {
+            "number": "168",
+            "reportId": "13243",
+            "postId": "4089902321",
+            "title": "Cho thuê căn hộ Akari Phase 1 & 2 - căn 2PN - 3PN giá từ 8tr - 13tr, căn hộ đa dạng, dễ lựa chọn",
+            "reason": "Tin đã giao dịch xong",
+            "date": "12/12/2024"
+          },
+          {
+            "number": "167",
+            "reportId": "13242",
+            "postId": "9876543210",
+            "title": "Bán gấp căn hộ view biển Vũng Tàu, giá rẻ bất ngờ, chỉ 15 triệu/m2",
+            "reason": "Tin có dấu hiệu lừa đảo",
+            "date": "11/12/2024"
+          },
+          {
+            "number": "166",
+            "reportId": "13241",
+            "postId": "1234567890",
+            "title": "Cho thuê nhà nguyên căn quận 7, 4 tầng, full nội thất cao cấp",
+            "reason": "Tin trùng lặp",
+            "date": "11/12/2024"
+          },
+          {
+            "number": "165",
+            "reportId": "13240",
+            "postId": "2468101214",
+            "title": "Bán đất nền dự án X, sổ đỏ trao tay, giá đầu tư",
+            "reason": "Tin không đúng thực tế",
+            "date": "10/12/2024"
+          },
+          {
+            "number": "164",
+            "reportId": "13239",
+            "postId": "1357911131",
+            "title": "Cho thuê căn hộ studio Bình Thạnh, full nội thất, giá rẻ",
+            "reason": "Tin spam",
+            "date": "10/12/2024"
+          },
+          {
+            "number": "163",
+            "reportId": "13238",
+            "postId": "9876543211",
+            "title": "Bán gấp nhà phố Thủ Đức, giá rẻ hơn thị trường 500 triệu",
+            "reason": "Tin có dấu hiệu lừa đảo",
+            "date": "09/12/2024"
+          },
+          {
+            "number": "162",
+            "reportId": "13237",
+            "postId": "1472583690",
+            "title": "Cho thuê văn phòng hạng A quận 1, view đẹp",
+            "reason": "Tin đã hết hạn",
+            "date": "09/12/2024"
+          }
+        ]
+      }
+  }

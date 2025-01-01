@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Sidebar from "../components/AdminSliderbarr";
 import { Dashboard, ViolationReport, NewsManagement, PostManagement } from "../pages/page";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import adminData from './data.json';  // Import data từ file JSON
+import { adminService } from './apiService';
 import styles from './Admin.module.css';
 
 function Admin() {
@@ -13,29 +13,65 @@ function Admin() {
     reportData: null
   });
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Load data từ file JSON
-    const loadData = () => {
+    const fetchAllData = async () => {
       try {
+        setIsLoading(true);
+        setError(null);
+
+        const [
+          dashboardData,
+          postManagementData,
+          newsData,
+          reportsData
+        ] = await Promise.all([
+          adminService.getDashboardData(),
+          adminService.getPostManagementData(),
+          adminService.getNewsData(),
+          adminService.getViolationReports()
+        ]);
+
         setData({
-          dashboardData: adminData.dashboard,
-          postData: adminData.postManagement,
-          newsData: adminData.newsManagement,
-          reportData: adminData.violationReport
+          dashboardData,
+          postData: postManagementData,
+          newsData,
+          reportData: reportsData
         });
-      } catch (error) {
-        console.error("Error loading data:", error);
+      } catch (err) {
+        setError(err.message || 'Có lỗi xảy ra khi tải dữ liệu');
+        console.error('Error fetching data:', err);
       } finally {
         setIsLoading(false);
       }
     };
 
-    loadData();
+    fetchAllData();
   }, []);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.loadingContainer}>
+        <div className={styles.spinner}></div>
+        <p>Đang tải dữ liệu...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className={styles.errorContainer}>
+        <h2>Lỗi</h2>
+        <p>{error}</p>
+        <button 
+          className={styles.retryButton}
+          onClick={() => window.location.reload()}
+        >
+          Thử lại
+        </button>
+      </div>
+    );
   }
 
   return (
