@@ -1,10 +1,10 @@
-import Header from "./header";
-import Footer from "./footer"
-import InputSearch from "./inputSearch";
-import Button from "./button";
-import ButtonCollapse from './buttonCollapse/index';
-import Success from "./success";
-import Spinner from "./spinner";
+import Header from "./Header";
+import Footer from "./Footer"
+import InputSearch from "./InputSearch";
+import Button from "./Button";
+import ButtonCollapse from './ButtonCollapse/index';
+import Success from "./Success";
+import Spinner from "./Spinner";
 
 
 export { Header, Footer, InputSearch, Button, ButtonCollapse, Success, Spinner}
